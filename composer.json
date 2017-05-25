@@ -1,0 +1,25 @@
+{
+  "name": "inf1i/WaterUpApi",
+  "description": "WaterUpApi - The server side API for the WaterUp project created by project group INF1i at Stenden University of allied sciences.",
+  "type": "project",
+  "license": "GPLv3",
+  "authors": [
+    {
+      "name": "Joris Rietveld",
+      "email": "jorisrietveld@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\WaterUpApi\\": "Tests/"
+    }
+  },
+  "require": {
+    "php": ">=7.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7",
+    "symfony/debug": "3.2.*"
+  }
+}

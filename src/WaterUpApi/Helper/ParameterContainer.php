@@ -6,10 +6,23 @@
  */
 declare(strict_types=1);
 
-namespace WaterUpApi\Helper;
+namespace StendenINF1I\WaterUpApi\Helper;
 
 
-class ParameterContainer extends ContainerContract
+class ParameterContainer extends BaseContainer
 {
-    private $parameters = [];
+    protected static $containerType = __CLASS__;
+
+    /**
+     * ParameterBaseContainer constructor that initiates the default classes properties.
+     *
+     * @param array $parameters
+     */
+    public function __construct(array $parameters = [])
+    {
+        parent::__construct($parameters);
+        self::setContainerType(__CLASS__);
+    }
+
+
 }

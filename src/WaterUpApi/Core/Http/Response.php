@@ -6,7 +6,7 @@
  */
 declare(strict_types=1);
 
-namespace WaterUpApi\Core\Http;
+namespace StendenINF1I\WaterUpApi\Core\Http;
 
 
 class Response

@@ -6,7 +6,7 @@
  */
 declare(strict_types=1);
 
-namespace WaterUpApi\Exception;
+namespace StendenINF1I\WaterUpApi\Exception;
 
 
 class InvalidTypeCastException extends \Exception
