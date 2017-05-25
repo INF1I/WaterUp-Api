@@ -11,9 +11,11 @@ namespace WaterUpApi\Helper;
 
 interface ContainerInterface
 {
-    public function get( string $index, $default );
+    public function get( string $index, $default = null );
 
-    public function set( string $index, $value ) : self;
+    public function set( string $index, $value = null ) : self;
+
+    public function saveSet( string $index, $value = null, bool $throwException = false ) : ?ContainerInterface;
 
     public function has( string $index ) : ?bool;
 
