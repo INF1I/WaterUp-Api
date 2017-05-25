@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseConnections>
+
+    <databaseConnection name="defaultConnection">
+        <option id="driver">mysql</option>
+        <option id="host">146.185.164.96</option>
+        <option id="port">3306</option>
+        <option id="dbname"></option>
+        <option id="username"></option>
+        <option id="password"></option>
+        <option id="charset">UTF8</option>
+        <option id="strict">1</option>
+        <option id="pdo-options">
+            <option id="\PDO::ATTR_EMULATE_PREPARES">FALSE</option>
+            <option id="\PDO::ATTR_ERRMODE">\PDO::ERRMODE_EXCEPTION</option>
+            <option id="\PDO::ATTR_CASE">\PDO::CASE_NATURAL</option>
+            <option id="\PDO::ATTR_ORACLE_NULLS">\PDO::NULL_NATURAL</option>
+            <option id="\PDO::ATTR_STRINGIFY_FETCHES">FALSE</option>
+        </option>
+    </databaseConnection>
+
+    <databaseConnection name="jorisLocalhost">
+        <option id="driver">mysql</option>
+        <option id="host">127.0.0.1</option>
+        <option id="port">3306</option>
+        <option id="dbname"></option>
+        <option id="username">root</option>
+        <option id="password">toor</option>
+        <option id="charset">UTF8</option>
+        <option id="strict">1</option>
+        <option id="pdo-options">
+            <option id="\PDO::ATTR_EMULATE_PREPARES">FALSE</option>
+            <option id="\PDO::ATTR_ERRMODE">\PDO::ERRMODE_EXCEPTION</option>
+            <option id="\PDO::ATTR_CASE">\PDO::CASE_NATURAL</option>
+            <option id="\PDO::ATTR_ORACLE_NULLS">\PDO::NULL_NATURAL</option>
+            <option id="\PDO::ATTR_STRINGIFY_FETCHES">FALSE</option>
+        </option>
+    </databaseConnection>
+
+</databaseConnections>
