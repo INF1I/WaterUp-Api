@@ -15,31 +15,27 @@ interface ContainerInterface
 
     public function set( string $index, $value = null ) : self;
 
-    public function saveSet( string $index, $value = null, bool $throwException = false ) : ?ContainerInterface;
+    public function safeSet(string $index, $value = null): ?self;
 
     public function has( string $index ) : ?bool;
 
     public function all() : array;
 
+    public function keys(): array;
+
     public function add( array $parameters ) : self;
 
-    public function addOne( string $index, $value ) : self;
+    public function safeAdd(array $parameters): ?self;
 
     public function remove( string $index ) : void;
 
     public function clear() : void;
 
-    public function keys() : array;
-
     public function replace( array $parameters ) : self;
 
     public function filter( string $index, $default, int $filter = FILTER_DEFAULT, array $options = [] );
 
-    public function getDateTime( string  $index, \DateTime $default = null ) : ?\DateTime;
-
-    public function getDatePeriod( string  $index, \DatePeriod $default = null ) : ?\DatePeriod;
-
-    public function getDateInterval( string $index, \DateInterval $default = null ) : ?\DateInterval;
+    public function getDateTime(string $index, string $dateTimeFormat, \DateTime $default = null): ?\DateTime;
 
     public function getObject( string $index, object $default = null ) : ?object;
 
@@ -53,19 +49,19 @@ interface ContainerInterface
 
     public function getArray( string $index, array $default  = null ) : ?array;
 
-    public function getContainer(string $index, ContainerInterface $default = null ) : ?ContainerInterface;
+    public function getContainer(string $index, ContainerInterface $default = null): ?self;
 
     public function getClosure( string $index, callable $default = null ) : ?callable;
 
-    public function offsetExists ( $offset ) : bool;
+    public function offsetExists($offset);
 
-    public function offsetGet ( $offset ) : mixed;
+    public function offsetGet($offset);
 
-    public function offsetSet ( $offset , $value ) : void;
+    public function offsetSet($offset, $value);
 
-    public function offsetUnset ( $offset ) : void;
+    public function offsetUnset($offset);
 
-    public function getIterator() : \Iterator;
+    public function getIterator();
 
     public function count() : int;
 }

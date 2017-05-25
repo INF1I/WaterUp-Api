@@ -9,7 +9,7 @@ declare(strict_types=1);
 namespace WaterUpApi\Helper;
 
 
-class ParameterContainer
+class ParameterContainer extends ContainerContract
 {
     private $parameters = [];
 }
