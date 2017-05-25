@@ -52,6 +52,10 @@ class BaseContainerTest extends TestCase
             ->getMockForAbstractClass();
     }
 
+    /**
+     * Test the $container->getInt or $container->getInteger methods. They should return an integer or cast it to an
+     * integer if possible.
+     */
     public function testGetInt()
     {
         $this->assertEquals(
@@ -73,6 +77,10 @@ class BaseContainerTest extends TestCase
         $this->assertNull($this->baseContainerMock->getInt('float'));
     }
 
+    /**
+     * Test the $container->getString( $index ) method. This method should return an string when an item in the
+     * container can be casted to one. It should fail on items that are not string castable like an closure.
+     */
     public function testGetString()
     {
         $this->assertEquals(
@@ -80,7 +88,7 @@ class BaseContainerTest extends TestCase
             $this->baseContainerMock->getString('string')
         );
         $this->assertEquals(
-            '1,1',
+            $this->testData['float'],
             $this->baseContainerMock->getString('float')
         );
 
