@@ -18,7 +18,10 @@ will also be used to configure the right plant species by taking an
 picture of the plant, and let machine learning classify the species.
 
 ## Documentation
-Documentation for this project will follow.
+There is documentation available for the API usage [here](Documantation/README.md)
+
+## Live version
+You can view an live version of the API at [https://api.inf1i.ga/](https://api.inf1i.ga/).
 
 ## Repository Authors
 Joris Rietveld - jorisrietveld@gmail.com<br>
