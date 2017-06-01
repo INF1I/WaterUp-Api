@@ -1,6 +1,9 @@
-# WaterUp - Server API
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/09b924af686a4033a7cd5826aeae712f)](https://www.codacy.com/app/jorisrietveld/WaterUpApi?utm_source=github.com&utm_medium=referral&utm_content=INF1I/WaterUpApi&utm_campaign=badger)
-[![Build Status](https://travis-ci.org/INF1I/WaterUpApi.svg?branch=master)](https://travis-ci.org/INF1I/WaterUpApi) ![PHP version](https://img.shields.io/badge/PHP%20version-7.1-brightgreen.svg)<br/>
+# WaterUp - OLD! Server API
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/09b924af686a4033a7cd5826aeae712f)](https://www.codacy.com/app/jorisrietveld/WaterUpApi?utm_source=github.com&utm_medium=referral&utm_content=INF1I/WaterUpApi&utm_campaign=badger) [![Build Status](https://travis-ci.org/INF1I/WaterUpApi.svg?branch=master)](https://travis-ci.org/INF1I/WaterUpApi) ![PHP version](https://img.shields.io/badge/PHP%20version-7.1-brightgreen.svg)<br/>
+# This project is not longer being developed!
+I choose to abandon this project because it would take too long to develop.
+I switched to the Symfony framework for rapid development you can find  the new repository [here](https://github.com/INF1I/WaterUp-RestApi)
+## About this project
 We are developing an internet of things device as part of the project
 innovate at Stenden University of applied sciences. In this project
 we are free to develop an product based on the internet of things.

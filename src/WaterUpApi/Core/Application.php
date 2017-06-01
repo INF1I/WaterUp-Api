@@ -9,10 +9,10 @@ declare(strict_types=1);
 namespace StendenINF1I\WaterUpApi\Core;
 
 
+use Symfony\Component\HttpFoundation\Request;
+
 class Application
 {
-    public function handle()
-    {
 
-    }
+
 }

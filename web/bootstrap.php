@@ -74,5 +74,8 @@ spl_autoload_register(function ($className)
     }
 });
 
+/**
+ * Also register the symfony autoloader.
+ */
 require PROJECT_ROOT . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
 
