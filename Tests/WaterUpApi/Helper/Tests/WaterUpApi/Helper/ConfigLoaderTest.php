@@ -71,7 +71,7 @@ XML;
 
         // Test if it loaded the ParameterContainer.
         $this->assertInstanceOf(
-            '\\StendenINF1B\\PortfolioCMS\\Kernel\\Helper\\ParameterContainer',
+            '\\StendenINF1I\\WaterUpApi\\Helpe\\ParameterContainer',
             $configLoader->getConfigContainer(true)
         );
     }
