@@ -1,8 +1,6 @@
-# WaterUp - OLD! Server API
+# WaterUp - Server API
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/09b924af686a4033a7cd5826aeae712f)](https://www.codacy.com/app/jorisrietveld/WaterUpApi?utm_source=github.com&utm_medium=referral&utm_content=INF1I/WaterUpApi&utm_campaign=badger) [![Build Status](https://travis-ci.org/INF1I/WaterUpApi.svg?branch=master)](https://travis-ci.org/INF1I/WaterUpApi) ![PHP version](https://img.shields.io/badge/PHP%20version-7.1-brightgreen.svg) ![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)<br/>
-# This project is not longer being developed!
-I choose to abandon this project because it would take too long to develop.
-I switched to the Symfony framework for rapid development you can find  the new repository [here](https://github.com/INF1I/WaterUp-RestApi)
+
 ## About this project
 We are developing an internet of things device as part of the project
 innovate at Stenden University of applied sciences. In this project
@@ -28,7 +26,7 @@ There is documentation available for the API usage [here](Documantation/README.m
 You can view an live version of the API at [https://api.inf1i.ga/](https://api.inf1i.ga/).
 
 ## Repository Authors
-Joris Rietveld - jorisrietveld@gmail.com<br>
+Jeroen Eefting - jeroen.eefting@student.stenden.com<br>
 
 ## Project members
 Rowan Nijland - rowan.nijland@student.stenden.com<br>
