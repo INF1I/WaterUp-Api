@@ -15,11 +15,11 @@ $getcorrectpot->execute();
 
 $idpot = $getcorrectpot->fetchColumn();
 
-//delete person and pot ids from link table. return success or failed.
+//delete person and pot ids from link table. return success or error.
 $query3 = $conn->exec("DELETE FROM pot_has_person WHERE pot_id='".$idpot."' AND person_id='".$idperson."';");
 if($query3 !== false){
 	echo $_GET['callback']."(".json_encode("success").");";
 }else{
-	echo $_GET['callback']."(".json_encode("failed").");";
+	echo $_GET['callback']."(".json_encode(array("error" => "Could not remove pot. Please restart the app and try again.")).");";
 }
 ?>

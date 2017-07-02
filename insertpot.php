@@ -14,7 +14,7 @@ $idperson = $getcorrectperson->fetchColumn();
 
 //if query1 fails return failed.
 if($query1 == false){
-	echo $_GET['callback']."(".json_encode("failed").");";
+	echo $_GET['callback']."(".json_encode(array("error" => "Could not add your device into the database. Please restart the app and try again.")).");";
 }
 
 //insert pot if that pot has not been added already. else ignore insert.
@@ -28,7 +28,7 @@ $idpot = $getcorrectpot->fetchColumn();
 
 //if query2 fails return failed.
 if($query2 == false){
-	echo $_GET['callback']."(".json_encode("failed").");";
+	echo $_GET['callback']."(".json_encode(array("error" => "Could not insert pot into database. Please restart the app and try again.")).");";
 }
 
 //insert person and pot ids into link table. return success or failed.
