@@ -47,14 +47,16 @@ if ($query1->rowCount() > 0) {
 
 		//create empty arrays to store results in.
 		$image = array();
+		$plantname = array();
 		
 		//loop through results and fill arrays accordingly.
 		while ($row = $query3->fetch(PDO::FETCH_ASSOC)) {		
 			$image[] = $row['image'];
+			$plantname[] = $row['name'];
 		}
 	
 		if ($query3->rowCount() > 0) {
-			echo $_GET['callback']."(".json_encode(array("hasplants" => 1, "id" => $potid, "image" => $image, "name" => $potname, "mac" => $mac, "deleted" => $deleted)).");";
+			echo $_GET['callback']."(".json_encode(array("hasplants" => 1, "id" => $potid, "image" => $image, "name" => $potname, "plantname" => $plantname,"mac" => $mac, "deleted" => $deleted)).");";
 		}else{
 			echo $_GET['callback']."(".json_encode(array("error" => "Could not get pot data. Please restart the app and try again.")).");";
 		}
